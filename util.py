@@ -112,6 +112,7 @@ def run_roulette_simulation(euro_roulette, n_trials, n_rolls, start_wallet, init
                 break
             if wallet < 0:
                 print("No choice, time to go home...")
+                break
 
         df = pd.DataFrame({"trial": [ith_trial] * ith_roll,
                            "wallet": wallet_history,
